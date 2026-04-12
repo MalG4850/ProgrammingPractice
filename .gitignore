@@ -1,0 +1,5 @@
+C++/abstract_class
+removed
+# Ignore extensionless files in C++ folder
+C++/*
+!C++/*.*

@@ -1,6 +1,4 @@
 #include <iostream>
-#include <ios>
-#include <vector>
 #include <fstream>
 
 int main(void) {

@@ -1,5 +1,6 @@
 C++/abstract_class
 removed
-# Ignore extensionless files in C++ folder
-C++/*
-!C++/*.*
+# Ignore extensionless files (binaries) but allow directories
+C++/**
+!C++/**/
+!C++/**/*.*

@@ -10,8 +10,12 @@ void writeLog(std::string message) {
 }
 
 int main(void) {
+    std::string log;
+    std::cout << "Enter the message you want to write to the log file: ";
+    std::cin >> log;
+
     try {
-        writeLog("Testing logfile system...");
+        writeLog(log);
         std::cout << "Log written successfully!";
     }
     catch (std::string& error) {

@@ -17,7 +17,10 @@ class Intern: virtual public Employee, virtual public Student {
 };
 
 int main(void) {
-    Intern I1("Malhar");
+    std::string n;
+    std::cout << "Enter the name of the Intern: ";
+    std::cin >> n;
+    Intern I1(n);
     I1.displayName();
     return 0;
 }

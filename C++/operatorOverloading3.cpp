@@ -33,7 +33,6 @@ int main(void) {
         std::cout << "Enter the imaginary part of complex no. " << j+1 << ": ";
         std::cin >> i[j];
     }
-
     Complex c1(r[0], i[0]), c2(r[1], i[1]);
     Complex c3 = c1 + c2;
     std::cout << c3;

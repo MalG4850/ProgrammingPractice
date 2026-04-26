@@ -16,7 +16,8 @@ int main() {
     if (file) {
         file.read(reinterpret_cast<char*>(read_arr), sizeof(read_arr));
         file.close();
-        std::cout << "Section 3: Read index 4 = " << read_arr[4] << "\n";
+        std::cout << "Array: ";
+        for (int i : read_arr) std::cout << read_arr[i] << " ";
     }
     return 0;
 }

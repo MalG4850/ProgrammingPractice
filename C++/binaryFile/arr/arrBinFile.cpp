@@ -17,7 +17,7 @@ int main() {
         file.read(reinterpret_cast<char*>(read_arr), sizeof(read_arr));
         file.close();
         std::cout << "Array: ";
-        for (int i : read_arr) std::cout << read_arr[i] << " ";
+        for (int i : read_arr) std::cout << i << " ";
     }
     return 0;
 }

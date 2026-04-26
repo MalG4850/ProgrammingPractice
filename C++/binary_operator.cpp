@@ -11,7 +11,7 @@ class Book {
             pages = pg;
         }
         Book operator +(Book& other) {
-            std::string newTitle = this->title + "&" + other.title;
+            std::string newTitle = this->title + " & " + other.title;
             int newPages = this->pages + other.pages;
             return Book(newTitle, newPages);
         }

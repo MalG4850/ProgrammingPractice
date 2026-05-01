@@ -1,5 +1,4 @@
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 
 fn main() {
     print!("This is a program to calculate the factorial of a given number.\n");

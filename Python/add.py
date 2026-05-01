@@ -1,7 +1,5 @@
-n = int(input('Type n: '))
-i = 1
-sum = 0
-while i <= n:
-    sum = sum + i
-    i += 1
-print('The sum is',sum)
+# This is a program to calculate the sum of the first n integers
+
+n = int(input("Enter the integer: "))
+sum = int((n * (n + 1)) / 2)
+print("The sum is:", sum)

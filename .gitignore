@@ -4,6 +4,9 @@ removed
 C++/**
 !C++/**/
 !C++/**/*.*
+Go/**
+!Go/**/
+!Go/**/*.*
 *.class
 *.exe
 Mojo/.pixi/

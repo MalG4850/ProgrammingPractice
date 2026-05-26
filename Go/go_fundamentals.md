@@ -120,9 +120,75 @@ Declare one variable of each basic type (`int`, `float64`, `bool`, `string`) and
 
 ---
 
-## Chapter 4: Control Flow
+## Chapter 4: Taking User Input
 
-### 4.1 If-Else and Switch
+### 4.1 Simple Input with `fmt.Scan`
+
+The `fmt` package provides functions like `Scan`, `Scanln`, and `Scanf` to read input from the standard input (usually the terminal).
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var name string
+    var age int
+
+    fmt.Print("Enter your name and age: ")
+    // Scan reads space-separated values
+    fmt.Scan(&name, &age)
+
+    fmt.Printf("Hello %s, you are %d years old.\n", name, age)
+}
+```
+
+> **Expected Output:**
+> ```
+> Enter your name and age: Alice 25
+> Hello Alice, you are 25 years old.
+> ```
+
+### 4.2 Reading Full Lines with `bufio`
+
+`fmt.Scan` stops reading at the first space. To read an entire line (including spaces), use the `bufio` package with `os.Stdin`.
+
+```go
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+)
+
+func main() {
+    scanner := bufio.NewScanner(os.Stdin)
+    fmt.Print("Enter a full sentence: ")
+    
+    if scanner.Scan() {
+        input := scanner.Text()
+        fmt.Println("You typed:", input)
+    }
+}
+```
+
+> **Expected Output:**
+> ```
+> Enter a full sentence: Learning Go is fun!
+> You typed: Learning Go is fun!
+> ```
+
+---
+
+## 🔨 Practice Problem 4.1
+Write a program that asks the user for two integers and prints their sum. Use `fmt.Scan` to read the input.
+
+---
+
+## Chapter 5: Control Flow
+
+### 5.1 If-Else and Switch
 
 Go's `if` statements don't need parentheses around conditions but require braces.
 
@@ -156,7 +222,7 @@ func main() {
 > Start of the week
 > ```
 
-### 4.2 For Loops
+### 5.2 For Loops
 
 The `for` loop is the only looping construct in Go.
 
@@ -168,14 +234,14 @@ for i := 0; i < 3; i++ {
 
 ---
 
-## 🔨 Practice Problem 4.1
+## 🔨 Practice Problem 5.1
 Write a `for` loop that prints all even numbers from 0 to 10 inclusive.
 
 ---
 
-## Chapter 5: Collections: Slices and Maps
+## Chapter 6: Collections: Slices and Maps
 
-### 5.1 Slices
+### 6.1 Slices
 
 Slices are dynamic arrays. They are more flexible and common than fixed-size arrays.
 
@@ -200,7 +266,7 @@ func main() {
 > Length: 4
 > ```
 
-### 5.2 Maps
+### 6.2 Maps
 
 Maps are key-value pairs (hash tables).
 
@@ -212,14 +278,14 @@ fmt.Println(m["Alice"])
 
 ---
 
-## 🔨 Practice Problem 5.1
+## 🔨 Practice Problem 6.1
 Create a slice of three strings (your favorite fruits). Append a fourth fruit to the slice and print the result.
 
 ---
 
-## Chapter 6: Functions
+## Chapter 7: Functions
 
-### 6.1 Multiple Return Values
+### 7.1 Multiple Return Values
 
 Go functions can return multiple values, which is often used for returning errors.
 
@@ -245,14 +311,14 @@ func main() {
 
 ---
 
-## 🔨 Practice Problem 6.1
+## 🔨 Practice Problem 7.1
 Write a function `divide(a, b float64) (float64, bool)` that returns the result of the division and `true` if successful, or `0, false` if the divisor is zero.
 
 ---
 
-## Chapter 7: Pointers
+## Chapter 8: Pointers
 
-### 7.1 Using Pointers
+### 8.1 Using Pointers
 
 Pointers hold the memory address of a value. Use `&` to get an address and `*` to dereference.
 
@@ -282,14 +348,14 @@ func main() {
 
 ---
 
-## 🔨 Practice Problem 7.1
+## 🔨 Practice Problem 8.1
 Write a function `zero(xptr *int)` that sets the value of the integer pointed to by `xptr` to 0.
 
 ---
 
-## Chapter 8: Structs and Methods
+## Chapter 9: Structs and Methods
 
-### 8.1 Structs
+### 9.1 Structs
 
 Structs are collections of fields.
 
@@ -300,7 +366,7 @@ type Person struct {
 }
 ```
 
-### 8.2 Methods (Receiver Functions)
+### 9.2 Methods (Receiver Functions)
 
 Methods are functions with a special receiver argument.
 
@@ -330,14 +396,14 @@ func main() {
 
 ---
 
-## 🔨 Practice Problem 8.1
+## 🔨 Practice Problem 9.1
 Define a struct `Rectangle` with `Width` and `Height`. Add a method `Area()` that returns the area of the rectangle.
 
 ---
 
-## Chapter 9: Interfaces
+## Chapter 10: Interfaces
 
-### 9.1 Defining and Implementing Interfaces
+### 10.1 Defining and Implementing Interfaces
 
 Interfaces are sets of method signatures. A type implements an interface by implementing its methods—no explicit `implements` keyword is needed.
 
@@ -375,14 +441,14 @@ func main() {
 
 ---
 
-## 🔨 Practice Problem 9.1
+## 🔨 Practice Problem 10.1
 Define an interface `Speaker` with a method `Speak() string`. Implement it for a `Dog` struct (returns "Woof") and a `Cat` struct (returns "Meow").
 
 ---
 
-## Chapter 10: Error Handling
+## Chapter 11: Error Handling
 
-### 10.1 The `error` Type
+### 11.1 The `error` Type
 
 In Go, errors are values. Functions often return an `error` as the last return value.
 
@@ -416,18 +482,18 @@ func main() {
 
 ---
 
-## 🔨 Practice Problem 10.1
-Modify your division function from Practice Problem 6.1 to return an `error` instead of a `bool` when the divisor is zero.
+## 🔨 Practice Problem 11.1
+Modify your division function from Practice Problem 7.1 to return an `error` instead of a `bool` when the divisor is zero.
 
 ---
 
-## Chapter 11: Concurrency (Goroutines and Channels)
+## Chapter 12: Concurrency (Goroutines and Channels)
 
-### 11.1 Goroutines
+### 12.1 Goroutines
 
 A goroutine is a lightweight thread managed by the Go runtime. Use the `go` keyword.
 
-### 11.2 Channels
+### 12.2 Channels
 
 Channels are the pipes that connect concurrent goroutines. You can send values from one goroutine into channels and receive those values into another goroutine.
 
@@ -464,7 +530,7 @@ func main() {
 
 ---
 
-## 🔨 Practice Problem 11.1
+## 🔨 Practice Problem 12.1
 Create a channel and a goroutine that sends the string "Done" into the channel. In the main function, wait for the string and print it.
 
 ---

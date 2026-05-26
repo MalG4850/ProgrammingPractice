@@ -6,9 +6,8 @@ func divide(x, y float64) (float64, bool) {
 	if y == 0 {
 		fmt.Print("\nSorry, can't divide by zero!\n\n")
 		return 0, false
-	} else {
-		return x / y, true
 	}
+	return x / y, true
 }
 
 func main() {

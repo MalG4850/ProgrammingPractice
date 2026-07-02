@@ -4,15 +4,9 @@ public class factorial {
 
     static long factorial(int num) {
         int fac = 1;
-        if (num < 0) System.out.print(
-            "Input Error: only positive numbers are supported."
-        );
-        else {
-            for (int i = 1; i <= num; i++) {
-                fac *= i;
-            }
+        for (int i = 1; i <= num; i++) {
+            fac *= i;
         }
-
         return fac;
     }
 
@@ -23,8 +17,14 @@ public class factorial {
         );
         int num = input.nextInt();
         long factorial = factorial(num);
-        System.out.print(
-            "\nThe factorial of " + num + " is " + factorial + "\n\n"
-        );
+        if (num < 0) {
+            System.out.print(
+                "\nInput Error: only positive numbers are supported.\n\n"
+            );
+        } else {
+            System.out.print(
+                "\nThe factorial of " + num + " is " + factorial + "\n\n"
+            );
+        }
     }
 }

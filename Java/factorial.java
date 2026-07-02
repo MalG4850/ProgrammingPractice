@@ -26,5 +26,6 @@ public class factorial {
                 "\nThe factorial of " + num + " is " + factorial + "\n\n"
             );
         }
+        input.close();
     }
 }

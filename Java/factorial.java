@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class factorial {
 
-    static long factorial(int num) {
+    public static long fac(int num) {
         int fac = 1;
         for (int i = 1; i <= num; i++) {
             fac *= i;
@@ -16,7 +16,7 @@ public class factorial {
             "\nThis is a program to calculate factorial of a given number: "
         );
         int num = input.nextInt();
-        long factorial = factorial(num);
+        long factorial = fac(num);
         if (num < 0) {
             System.out.print(
                 "\nInput Error: only positive numbers are supported.\n\n"

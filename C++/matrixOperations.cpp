@@ -8,13 +8,11 @@ public:
     // A 2D vector: a vector of vectors of integers
     std::vector<std::vector<int>> data;
 
-    // Constructor to easily initialize a matrix with given dimensions
     Matrix(int r = 0, int c = 0) : rows(r), cols(c) {
         data.resize(rows, std::vector<int>(cols, 0));
     }
 };
 
-// Pass by const reference to avoid expensive copying
 Matrix addMatrices(const Matrix& a, const Matrix& b) {
     Matrix result(a.rows, a.cols);
 
@@ -50,7 +48,7 @@ void printMatrix(const Matrix& m) {
     std::cout << "\n\n";
 }
 
-int main() {
+int main(void) {
     int choice;
     std::cout << "\nThis is a program for Matrix Operations.\n\n";
     std::cout << "[1] Addition\n[2] Multiplication\n\nEnter your choice: ";
@@ -67,7 +65,7 @@ int main() {
     std::cout << "\nEnter rows and cols for matrix 2: ";
     std::cin >> r2 >> c2;
 
-    // --- Validation Checks Right Here ---
+    // Validation Checking
     if (choice == 1) {
         if (r1 != r2 || c1 != c2) {
             std::cout << "\nError: Dimensions must match for addition (e.g., both must be MxN).\n\n";
@@ -81,7 +79,6 @@ int main() {
         }
     }
 
-    // --- Inputs are validated! Safe to create matrices and get elements ---
     Matrix a(r1, c1);
     Matrix b(r2, c2);
 
@@ -95,7 +92,7 @@ int main() {
         for (int j = 0; j < c2; ++j)
             std::cin >> b.data[i][j];
 
-    // --- Perform operations ---
+    // Result
     Matrix result;
     if (choice == 1) {
         result = addMatrices(a, b);

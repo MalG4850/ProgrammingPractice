@@ -17,10 +17,10 @@ int main(void) {
 
     for (i = 0; i < n1; i++) {
 
-        std::cout << "\nEnter the exponent of the " << (i + 1) << "th term: ";
+        std::cout << "\nEnter the exponent of term " << (i + 1) << ": ";
         std::cin >> p1[i].exp;
 
-        std::cout << "\nEnter the coefficient of the " << (i + 1) << "th term: ";
+        std::cout << "\nEnter the coefficient of term " << (i + 1) << ": ";
         std::cin >> p1[i].coeff;
 
     }
@@ -32,10 +32,10 @@ int main(void) {
 
     for (j = 0; j < n2; j++) {
 
-        std::cout << "\nEnter the exponent of the " << (j + 1) << "th term: ";
+        std::cout << "\nEnter the exponent of term " << (j + 1) << ": ";
         std::cin >> p2[j].exp;
 
-        std::cout << "\nEnter the coefficient of the " << (j + 1) << "th term: ";
+        std::cout << "\nEnter the coefficient of term " << (j + 1) << ": ";
         std::cin >> p2[j].coeff;
 
     }

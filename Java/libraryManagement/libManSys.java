@@ -6,35 +6,28 @@ public class libManSys {
     int count = 0;
 
     public void addBook() {
+        Book b = new Book();
         System.out.print("Enter Book ID: ");
-        int id = input.nextInt();
+        b.id = input.nextInt();
         input.nextLine();
 
         System.out.print("Enter Book Name: ");
-        String title = input.nextLine();
+        b.title = input.nextLine();
 
         System.out.print("Enter Author Name: ");
-        String author = input.nextLine();
+        b.author = input.nextLine();
 
         System.out.print("Enter Quantity: ");
-        int qty = input.nextInt();
+        b.quantity = input.nextInt();
         input.nextLine();
 
         System.out.print("Enter Price: ");
-        int price = input.nextInt();
+        b.price = input.nextInt();
         input.nextLine();
 
         System.out.print("Enter Pages: ");
-        int pages = input.nextInt();
+        b.pages = input.nextInt();
         input.nextLine();
-
-        Book b = new Book();
-        b.id = id;
-        b.title = title;
-        b.author = author;
-        b.quantity = qty;
-        b.price = price;
-        b.pages = pages;
 
         books[count] = b;
         count++;
@@ -127,7 +120,6 @@ public class libManSys {
         System.out.print("Enter Book ID to return: ");
         int id = input.nextInt();
         input.nextLine();
-
         boolean found = false;
         for (int i = 0; i < count; i++) {
             if (books[i].id == id) {

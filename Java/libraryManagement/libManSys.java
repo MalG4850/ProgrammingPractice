@@ -139,15 +139,15 @@ public class libManSys {
             System.out.println("No books available");
             return;
         }
-        System.out.println("Book ID | Book Name | Author | Quantity | Price | Pages");
+        System.out.println("Book ID\tBook Name\tAuthor\tQuantity\tPrice\tPages");
         for (int i = 0; i < count; i++) {
-            System.out.println(books[i].id + " | " + books[i].title + " | " + books[i].author + " | " + books[i].quantity + " | " + books[i].price + " | " + books[i].pages);
+            System.out.println(books[i].id + "\t" + books[i].title + "\t" + books[i].author + "\t" + books[i].quantity + "\t" + books[i].price + "\t" + books[i].pages);
         }
     }
 
     public void menu() {
         while (true) {
-            System.out.println("\n========== LIBRARY MANAGEMENT SYSTEM ==========");
+            System.out.println("\n\n========== LIBRARY MANAGEMENT SYSTEM ==========");
             System.out.println("1. Add Book");
             System.out.println("2. Delete Book");
             System.out.println("3. Update Book");

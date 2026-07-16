@@ -1,20 +1,24 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func checkSys(tempPtr *int, memPtr *int) {
+	isHealthy := true
+
 	if *tempPtr > 80 {
-		fmt.Print("\nWarning: High CPU Temp! Resetting to lower temp.\n\n")
+		fmt.Println("Warning: High CPU Temp! Resetting to lower temp.")
 		*tempPtr = 50
+		isHealthy = false
 	}
 
 	if *memPtr > 90 {
-		fmt.Print("\nWarning: High memory usage! Resetting to lower usage.\n\n")
+		fmt.Println("Warning: High memory usage! Resetting to lower usage.")
 		*memPtr = 40
-	} else {
-		fmt.Print("\nSystem is healthy.\n\n")
+		isHealthy = false
+	}
+
+	if isHealthy {
+		fmt.Println("System is healthy.")
 	}
 }
 

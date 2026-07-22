@@ -2,13 +2,14 @@
 #include <stdexcept>
 #include <vector>
 #include <string>
+#include <chrono>
 
 void bubbleSort(std::vector<int>& arr) {
-    int n = arr.size();
-    if (n < 2) return;
-    for (int i = 0; i < n - 1; i++) {
+    auto start = std::chrono::high_resolution_clock::now();
+    if (arr.size() < 2) return;
+    for (int i = 0; i < arr.size() - 1; i++) {
         bool swapped = false;
-        for (int j = 0; j < n - i - 1; j++) {
+        for (int j = 0; j < arr.size() - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 std::swap(arr[j], arr[j + 1]);
                 swapped = true;
@@ -16,11 +17,19 @@ void bubbleSort(std::vector<int>& arr) {
         }
         if (!swapped) break;
     }
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
+    std::cout << "\nList sorting successful! Here is the output list: ";
+    for (int x : arr) {
+        std::cout << x << " ";
+    }
+    std::cout << "\nTime required: " << duration.count() << " μs\n\n";
 }
 
 void insertionSort(std::vector<int>& arr) {
-    int n = arr.size();
-    for (int i = 1; i < n; i++) {
+    auto start = std::chrono::high_resolution_clock::now();
+    for (int i = 1; i < arr.size(); i++) {
         int temp = arr[i];
         int j = i - 1;
         while (j >= 0 && arr[j] > temp) {
@@ -29,6 +38,14 @@ void insertionSort(std::vector<int>& arr) {
         }
         arr[j + 1] = temp;
     }
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
+    std::cout << "\nList sorting successful! Here is the output list: ";
+    for (int x : arr) {
+        std::cout << x << " ";
+    }
+    std::cout << "\nTime required: " << duration.count() << " μs\n\n";
 }
 
 int main(void) {
@@ -69,12 +86,6 @@ int main(void) {
             std::cout << "Invalid choice! Skipping sort.\n";
             break;
     }
-
-    std::cout << "\nList sorting successful! Here is the output list: ";
-    for (int x : arr) {
-        std::cout << x << " ";
-    }
-    std::cout << "\n";
 
     return 0;
 }

@@ -11,7 +11,7 @@ void bubbleSort(std::vector<int>& arr) {
         for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 std::swap(arr[j], arr[j + 1]);
-                swapped = true; // FIX: Set swapped flag to true
+                swapped = true;
             }
         }
         if (!swapped) break;
@@ -37,7 +37,7 @@ int main(void) {
     int choice = 0;
 
     std::cout << "\nThis is a program to sort a list of numbers.\n\n";
-    std::cout << "Enter numbers (enter 'q' to stop):\n";
+    std::cout << "Enter numbers (enter 'q' to stop): ";
 
     while (std::cin >> input && input != "q") {
         try {

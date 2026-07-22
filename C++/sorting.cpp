@@ -70,11 +70,11 @@ int main(void) {
             break;
     }
 
-    std::cout << "\n\nList sorting successful! Here is the output list: ";
+    std::cout << "\nList sorting successful! Here is the output list: ";
     for (int x : arr) {
         std::cout << x << " ";
     }
-    std::cout << "\n\n";
+    std::cout << "\n";
 
     return 0;
 }

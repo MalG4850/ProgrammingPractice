@@ -24,7 +24,7 @@ void bubbleSort(std::vector<int>& arr) {
     for (int x : arr) {
         std::cout << x << " ";
     }
-    std::cout << "\nTime required: " << duration.count() << " μs\n\n";
+    std::cout << "\nTime required: " << duration.count() << "\n\n";
 }
 
 void insertionSort(std::vector<int>& arr) {
@@ -45,7 +45,7 @@ void insertionSort(std::vector<int>& arr) {
     for (int x : arr) {
         std::cout << x << " ";
     }
-    std::cout << "\nTime required: " << duration.count() << " μs\n\n";
+    std::cout << "\nTime required: " << duration.count() << "\n\n";
 }
 
 int main(void) {

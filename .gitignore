@@ -10,3 +10,4 @@ Go/**
 *.class
 *.exe
 Mojo/.pixi/
+*/build

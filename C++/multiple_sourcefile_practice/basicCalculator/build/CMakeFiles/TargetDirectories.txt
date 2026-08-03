@@ -1,3 +1,0 @@
-/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/basicCalculator/build/CMakeFiles/basicCalculator.dir
-/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/basicCalculator/build/CMakeFiles/edit_cache.dir
-/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/basicCalculator/build/CMakeFiles/rebuild_cache.dir

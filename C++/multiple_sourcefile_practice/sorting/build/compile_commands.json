@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/sorting/build",
+  "command": "/usr/bin/c++  -I/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/sorting/include -std=gnu++20 -o CMakeFiles/sorting.dir/app/main.cpp.o -c /home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/sorting/app/main.cpp",
+  "file": "/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/sorting/app/main.cpp",
+  "output": "CMakeFiles/sorting.dir/app/main.cpp.o"
+},
+{
+  "directory": "/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/sorting/build",
+  "command": "/usr/bin/c++  -I/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/sorting/include -std=gnu++20 -o CMakeFiles/sorting.dir/src/sorting.cpp.o -c /home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/sorting/src/sorting.cpp",
+  "file": "/home/malhar/ProgrammingPractice/C++/multiple_sourcefile_practice/sorting/src/sorting.cpp",
+  "output": "CMakeFiles/sorting.dir/src/sorting.cpp.o"
+}
+]

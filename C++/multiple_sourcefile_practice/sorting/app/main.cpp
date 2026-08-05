@@ -29,7 +29,7 @@ int main(void) {
         std::cout << x << " ";
     }
 
-    std::cout << "\n\nTo sort this list, we have 2 options:\n\n[1] Bubble Sort\n[2] Insertion Sort\n[3] Quick Sort\n[4] Selection Sort\n[5] Exit\n\nTake your pick (1-4): ";
+    std::cout << "\n\nTo sort this list, we have 4 options:\n\n[1] Bubble Sort\n[2] Insertion Sort\n[3] Quick Sort\n[4] Selection Sort\n[5] Exit\n\nTake your pick (1-4): ";
     std::cin >> choice;
 
     switch (choice) {

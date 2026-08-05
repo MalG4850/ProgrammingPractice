@@ -56,7 +56,7 @@ void bubbleSort(std::vector<int>& arr) {
     for (int x : arr) {
         std::cout << x << " ";
     }
-    std::cout << "\nTime required: " << duration.count() << "μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
+    std::cout << "\nTime required: " << duration.count() << " μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
 }
 
 void insertionSort(std::vector<int>& arr) {
@@ -81,7 +81,7 @@ void insertionSort(std::vector<int>& arr) {
     for (int x : arr) {
         std::cout << x << " ";
     }
-    std::cout << "\nTime required: " << duration.count() << "μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
+    std::cout << "\nTime required: " << duration.count() << " μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
 }
 
 void quickSort(std::vector<int>& arr) {
@@ -98,7 +98,7 @@ void quickSort(std::vector<int>& arr) {
     for (int x : arr) {
         std::cout << x << " ";
     }
-    std::cout << "\nTime required: " << duration.count() << "μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
+    std::cout << "\nTime required: " << duration.count() << " μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
 }
 
 void selectionSort(std::vector<int>& arr) {
@@ -125,5 +125,5 @@ void selectionSort(std::vector<int>& arr) {
 
     std::cout << "\nList sorting successful! Here is the output list: ";
     for (int x : arr) std::cout << x << " ";
-    std::cout << "\nTime required: " << duration.count() << "μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
+    std::cout << "\nTime required: " << duration.count() << " μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
 }

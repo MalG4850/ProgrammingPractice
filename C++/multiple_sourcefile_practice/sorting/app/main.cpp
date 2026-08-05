@@ -41,9 +41,10 @@ int main(void) {
             goto input;
         case 3:
             quickSort(arr);
-            break;
+            goto input;
         case 4:
             selectionSort(arr);
+            goto input;
         case 5:
             return 0;
         default:

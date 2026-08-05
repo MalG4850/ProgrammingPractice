@@ -90,3 +90,22 @@ void quickSort(std::vector<int>& arr) {
     std::cout << "\nTime required: " << duration.count() << "\n\n";
 
 }
+
+void selectionSort(std::vector<int>& arr) {
+    auto start = std::chrono::high_resolution_clock::now();
+    for (int i = 0; i < arr.size() - 1; i++) {
+        int min_index = i;
+        for (int j = i + 1;j < arr.size() ; j++) {
+            if (arr[j] < arr[min_index]) std::swap(arr[i], arr[j]);
+        }
+        std::swap(arr[min_index], arr[i]);
+    }
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+
+    std::cout << "\nList sorting successful! Here is the output list: ";
+    for (int x : arr) {
+        std::cout << x << " ";
+    }
+    std::cout << "\nTime required: " << duration.count() << "\n\n";
+}

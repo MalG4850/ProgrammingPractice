@@ -5,6 +5,6 @@ def greetName_dynamic(name: String):
     print("Hello from the dynamic side, " + name + "!\n")
 
 def main() raises:
-    user = input("\nWhat's your name? ")
+    var user = input("\nWhat's your name? ")
     greetName_compiled(user)
     greetName_dynamic(user)

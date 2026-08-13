@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <chrono>
 #include <iostream>
+#include <cstdlib>
 #include <vector>
 #include "sorting.hpp"
 
@@ -33,6 +34,10 @@ namespace sortHelper {
     }
 }
 
+int getRandom() {
+    return rand();
+}
+
 void bubbleSort(std::vector<int>& arr) {
     long long iterations = 0, swaps = 0;
     auto start = std::chrono::high_resolution_clock::now();
@@ -52,7 +57,7 @@ void bubbleSort(std::vector<int>& arr) {
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
-    std::cout << "\nList sorting successful! Here is the output list: ";
+    std::cout << "\nList sorting successful! Here is the output list: \n\n";
     for (int x : arr) {
         std::cout << x << " ";
     }
@@ -77,7 +82,7 @@ void insertionSort(std::vector<int>& arr) {
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
-    std::cout << "\nList sorting successful! Here is the output list: ";
+    std::cout << "\nList sorting successful! Here is the output list: \n\n";
     for (int x : arr) {
         std::cout << x << " ";
     }
@@ -94,7 +99,7 @@ void quickSort(std::vector<int>& arr) {
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
-    std::cout << "\nList sorting successful! Here is the output list: ";
+    std::cout << "\nList sorting successful! Here is the output list: \n\n";
     for (int x : arr) {
         std::cout << x << " ";
     }
@@ -123,7 +128,7 @@ void selectionSort(std::vector<int>& arr) {
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
-    std::cout << "\nList sorting successful! Here is the output list: ";
+    std::cout << "\nList sorting successful! Here is the output list: \n\n";
     for (int x : arr) std::cout << x << " ";
     std::cout << "\nTime required: " << duration.count() << " μ sec" << "\nIterations: " << iterations << "\nSwaps: " << swaps << "\n\n";
 }

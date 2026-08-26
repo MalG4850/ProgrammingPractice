@@ -19,7 +19,7 @@ Mojo/.pixi/
 **/cmake_install.cmake
 **/Makefile
 **/compile_commands.json
-
+.cache
 
 # C/C++ object and dependency files
 *.o

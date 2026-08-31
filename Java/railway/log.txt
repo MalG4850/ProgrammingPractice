@@ -1,0 +1,88 @@
+╭─░▒▓ ~/Documents/ProgrammingPractice/Java  on main !12 ?2 ─────────────────────────────────────────────────────────────────────── ✔  at 07:40:52 PM ▓▒░
+╰─ java railway.main.RailwayReservation
+
+========== USER LOGIN ==========
+Enter Username: admin
+Enter Password: 1234
+Login Successful!
+
+========== RAILWAY MENU ==========
+1. Search Train
+2. Book Ticket
+3. View Ticket
+4. Cancel Ticket
+5. Exit
+Enter Choice [1-5]: 1
+
+Enter Source Station: Mumbai
+Enter Destination Station: Pune
+
+Available Trains:
+Train Name: Deccan Express | Route: Mumbai -> Pune | Seating: 40 | Sleeper: 20 | AC: 10
+
+========== RAILWAY MENU ==========
+1. Search Train
+2. Book Ticket
+3. View Ticket
+4. Cancel Ticket
+5. Exit
+Enter Choice [1-5]: 2
+
+Enter Source Station: Mumbai
+Enter Destination Station: Pune
+
+Matching Trains Found:
+[1] Train Name: Deccan Express | Route: Mumbai -> Pune | Seating: 40 | Sleeper: 20 | AC: 10
+Select Train (Enter Number): 1
+Enter Passenger Name: Malhar
+Enter Age: 20
+Enter Gender: Male
+Enter Phone Number: 1234567890
+Enter Berth Preference (Lower/Upper/Side): Upper
+Select Class (Seating/Sleeper/AC): Sleeper
+Ticket processed successfully for PNR: PNR990820
+
+Booking Confirmed! Generated PNR: PNR990820
+
+========== RAILWAY MENU ==========
+1. Search Train
+2. Book Ticket
+3. View Ticket
+4. Cancel Ticket
+5. Exit
+Enter Choice [1-5]: 3
+
+Enter PNR to View Ticket: PNR990820
+
+---------------- TICKET DETAILS ----------------
+PNR Status     : CONFIRMED
+PNR Number     : PNR990820
+Train Name     : Deccan Express
+Route          : Mumbai to Pune
+Passenger: Malhar | Age: 20 | Gender: Male | Phone: 1234567890 | Preference: Upper
+Booking Class  : Sleeper
+Seat Number    : 34
+------------------------------------------------
+
+========== RAILWAY MENU ==========
+1. Search Train
+2. Book Ticket
+3. View Ticket
+4. Cancel Ticket
+5. Exit
+Enter Choice [1-5]: 4
+
+Enter PNR to Cancel Ticket: PNR990820
+Are you sure you want to cancel ticket PNR990820? (yes/no): yes
+Ticket with PNR PNR990820 status set to CANCELLED.
+Cancellation confirmed for PNR PNR990820.
+
+========== RAILWAY MENU ==========
+1. Search Train
+2. Book Ticket
+3. View Ticket
+4. Cancel Ticket
+5. Exit
+Enter Choice [1-5]: 5
+
+Exiting Railway System. Goodbye!

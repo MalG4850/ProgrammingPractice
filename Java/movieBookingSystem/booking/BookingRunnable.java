@@ -1,3 +1,6 @@
+package booking;
+import exception.SeatBookingException;
+
 public class BookingRunnable implements Runnable {
     private BookingSystem bookingSystem;
     private String user;

@@ -1,0 +1,36 @@
+java main.Test
+
+========== Movie Ticket Booking System ==========
+Total Available Seats: 10
+Enter total number of users trying to book tickets: 2
+
+Enter name for User 1: Malhar
+Enter seats requested by Malhar: 3
+
+Enter name for User 2: Shaunak
+Enter seats requested by Shaunak: 1
+
+--- Starting All Booking Threads Simultaneously ---
+
+--- Processing Booking for User: Malhar ---
+Malhar logged in successfully.
+Theatre selected: PVR Cinemas.
+Movie selected: Interstellar.
+Showtime selected: 7:00 PM.
+Malhar requested 3 seats.
+Seats allocated successfully. Remaining seats: 7
+Payment processed successfully for Malhar.
+=== TICKET CONFIRMED FOR Malhar (3 Seats) ===
+
+--- Processing Booking for User: Shaunak ---
+Shaunak logged in successfully.
+Theatre selected: PVR Cinemas.
+Movie selected: Interstellar.
+Showtime selected: 7:00 PM.
+Shaunak requested 1 seats.
+Seats allocated successfully. Remaining seats: 6
+Payment processed successfully for Shaunak.
+=== TICKET CONFIRMED FOR Shaunak (1 Seats) ===
+
+Final Available Seats remaining: 6
+Booking Process Finished.

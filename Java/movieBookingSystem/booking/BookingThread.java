@@ -1,3 +1,6 @@
+package booking;
+import exception.SeatBookingException;
+
 public class BookingThread extends Thread {
     private BookingSystem bookingSystem;
     private String user;

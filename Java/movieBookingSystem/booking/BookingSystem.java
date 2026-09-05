@@ -1,3 +1,6 @@
+package booking;
+import exception.SeatBookingException;
+
 public class BookingSystem {
     private int availableSeats = 10; // Total available seats
 

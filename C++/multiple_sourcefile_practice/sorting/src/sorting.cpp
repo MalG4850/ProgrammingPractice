@@ -35,7 +35,7 @@ namespace sortHelper {
 }
 
 int getRandom() {
-    return rand();
+    return 1 + (rand() % (50000));
 }
 
 void bubbleSort(std::vector<int>& arr) {

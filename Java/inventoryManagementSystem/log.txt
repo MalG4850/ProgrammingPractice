@@ -1,0 +1,165 @@
+===== SELECT DATA STRUCTURE =====
+1. ArrayList
+2. LinkedList
+3. PriorityQueue (by price)
+4. ArrayDeque
+5. TreeSet
+6. HashSet
+7. HashMap (key = ID)
+0. Exit
+Choose: 1
+
+----- OPERATIONS -----
+1. Add
+2. Remove
+3. Update
+4. Check Duplicates
+5. Display
+0. Back to structure menu
+Choose: 1
+ID: 101
+Name: Laptop
+Category (ELECTRONICS, GROCERIES, CLOTHING): ELECTRONICS
+Price: 55000
+Quantity: 5
+Product added.
+
+----- OPERATIONS -----
+1. Add
+2. Remove
+3. Update
+4. Check Duplicates
+5. Display
+0. Back to structure menu
+Choose: 1
+ID: 102
+Name: Biscuits
+Category (ELECTRONICS, GROCERIES, CLOTHING): GROCERIES
+Price: 30
+Quantity: 50
+Product added.
+
+----- OPERATIONS -----
+1. Add
+2. Remove
+3. Update
+4. Check Duplicates
+5. Display
+0. Back to structure menu
+Choose: 1
+ID: 103
+Name: laptop
+Category (ELECTRONICS, GROCERIES, CLOTHING): ELECTRONICS
+Price: 60000
+Quantity: 2
+Product added.
+
+----- OPERATIONS -----
+1. Add
+2. Remove
+3. Update
+4. Check Duplicates
+5. Display
+0. Back to structure menu
+Choose: 4
+Duplicate found: ========== Product Info ==========
+
+ID: 103
+Name: laptop
+Category: ELECTRONICS
+Price: 60000
+Quantity (in-stock): 2
+
+----- OPERATIONS -----
+1. Add
+2. Remove
+3. Update
+4. Check Duplicates
+5. Display
+0. Back to structure menu
+Choose: 5
+1. Normal display
+2. Iterator display
+Choose: 2
+========== Product Info ==========
+
+ID: 101
+Name: Laptop
+Category: ELECTRONICS
+Price: 55000
+Quantity (in-stock): 5
+
+========== Product Info ==========
+
+ID: 102
+Name: Biscuits
+Category: GROCERIES
+Price: 30
+Quantity (in-stock): 50
+
+========== Product Info ==========
+
+ID: 103
+Name: laptop
+Category: ELECTRONICS
+Price: 60000
+Quantity (in-stock): 2
+
+----- OPERATIONS -----
+1. Add
+2. Remove
+3. Update
+4. Check Duplicates
+5. Display
+0. Back to structure menu
+Choose: 2
+Enter ID to remove: 103
+Product removed.
+
+----- OPERATIONS -----
+1. Add
+2. Remove
+3. Update
+4. Check Duplicates
+5. Display
+0. Back to structure menu
+Choose: 5
+1. Normal display
+2. Iterator display
+Choose: 1
+========== Product Info ==========
+
+ID: 101
+Name: Laptop
+Category: ELECTRONICS
+Price: 55000
+Quantity (in-stock): 5
+
+========== Product Info ==========
+
+ID: 102
+Name: Biscuits
+Category: GROCERIES
+Price: 30
+Quantity (in-stock): 50
+
+----- OPERATIONS -----
+1. Add
+2. Remove
+3. Update
+4. Check Duplicates
+5. Display
+0. Back to structure menu
+Choose: 0
+
+===== SELECT DATA STRUCTURE =====
+1. ArrayList
+2. LinkedList
+3. PriorityQueue (by price)
+4. ArrayDeque
+5. TreeSet
+6. HashSet
+7. HashMap (key = ID)
+0. Exit
+Choose: 0
+Goodbye!

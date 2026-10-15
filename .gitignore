@@ -26,4 +26,4 @@ Mojo/.pixi/
 *.d
 
 # Java JAR files
-.jar
+*.jar

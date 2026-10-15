@@ -24,3 +24,6 @@ Mojo/.pixi/
 # C/C++ object and dependency files
 *.o
 *.d
+
+# Java JAR files
+.jar
